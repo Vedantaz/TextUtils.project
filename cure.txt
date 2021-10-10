@@ -1,0 +1,10 @@
+
+
+
+if for some reason the server is not opening 
+then run >>1.. \env\Scripts\activate       //this required mainly to activate the virtual environment 
+           2.   pip install django      // not required now 
+           3.   django-admin startproject textutlis .    required to start project with it's name but not required mainly to start
+           4.   python .\manage.py runserver           // directly run after the env command int he terminal 
+
+this are the required steps to run and start server 

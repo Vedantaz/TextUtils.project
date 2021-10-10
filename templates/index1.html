@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Victor-World.com</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Ved-TextUtils</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="templates\about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Trending</a>
+                    </li> 
+                </ul>
+            </div>
+        
+    </nav>
+<div class="leftnav" style="background-color: antiquewhite;">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Welcome to Ved-TextUtils</strong> You can do anything you want here.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <div class="container-fluid ">
+        <!-- <h1>your analyzed text - {{ Purpose }}</h1>
+        <p>{{ analyzed_text }}</p>
+         -->
+        <form action='/analyze' method='get'>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="    background-color: black;
+                color: #08e8e1;">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" style="    background-color: black;
+                color: #08e8e1;">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="6b" style="    background-color: black;
+                color: #08e8e1;"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" style="background-color: black;
+                color: #a1eecb;">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="background-color: #a1eecb;
+            color: black;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;">Analyzed Text</button>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name ="check" role="switch" id="flexSwitchCheckChecked" check>
+                <label class="form-check-label" for="flexSwitchCheckChecked">checkbox</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="removepunc" role="switch"
+                    id="flexSwitchCheckChecked" check>
+                <label class="form-check-label" for="flexSwitchCheckChecked"> Remove punctuations</label>
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="fullcaps" role="switch"
+                    id="flexSwitchCheckChecked" check>
+                <label class="form-check-label" for="flexSwitchCheckChecked"> UPPERCASE</label>
+
+            </div>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="newlineremover" role="switch"
+                    id="flexSwitchCheckChecked" check>
+                <label class="form-check-label" for="flexSwitchCheckChecked"> New line remover</label>
+
+            </div>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" name="extraspaceremover" role="switch"
+                    id="flexSwitchCheckChecked" check>
+                <label class="form-check-label" for="flexSwitchCheckChecked"> Extra space remover</label>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>
